@@ -22,3 +22,23 @@ $color-very-dark-desaturated-blue: hsl(237, 23%, 32%);
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: Ubuntu, sans-serif;
+    font-size: 10px;
+}
+
+.container {
+    max-width: 144rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
