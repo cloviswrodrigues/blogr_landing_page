@@ -1,4 +1,8 @@
 .header {
+    padding-top: 5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $color-white;
 
     &__bg--pattern {
         position: absolute;
@@ -16,5 +20,32 @@
 
     &__nav {
         display: flex;
+        justify-content: space-between;
+        align-items: center;        
+        flex-basis: 100%;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+
+        &--submenu {
+            display: none;
+        }
+    }
+
+    &__logon {
+        display: flex;        
+        align-items: center;
+        gap: 3rem;
+
+        &--signup {
+            height: 18px;
+            padding: 1rem 3rem;
+            border-radius: 4rem;
+            background-color: $color-white;
+            color: $color-light-red;
+        }
     }
 }

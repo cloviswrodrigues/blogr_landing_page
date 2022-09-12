@@ -24,6 +24,12 @@ a {
   cursor: pointer;
 }
 
+.header {
+  padding-top: 5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
 .header__bg--pattern {
   position: absolute;
   top: 0;
@@ -38,6 +44,29 @@ a {
 }
 .header__nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 100%;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.header__menu--submenu {
+  display: none;
+}
+.header__logon {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.header__logon--signup {
+  height: 18px;
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(353deg, 100%, 62%);
 }
 
 /*# sourceMappingURL=style.css.map */
