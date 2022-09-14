@@ -35,3 +35,49 @@
         }
     }
 }
+
+.section-second {
+    margin-top: 35rem;
+    color: $color-very-dark-grayish-blue;
+    position: relative;
+
+    h2 {
+        font-family: Overpass, sans-serif;
+        font-size: 3.5rem;
+        color: $color-very-dark-black-blue;
+        text-align: center;
+    }
+
+    &__info {
+        margin-top: 10rem;
+        max-width: 40%;
+
+        h3 {            
+            font-family: Overpass, sans-serif;
+            font-size: 2.5rem;
+            color: $color-very-dark-black-blue;
+        }
+
+        p {
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+        }
+        
+        &:nth-child(3) {
+            margin-top: 6rem;
+        }
+    }
+
+    &__illustration {
+        position: absolute;
+        top: -80px;
+        right: -400px;
+        width: 100%;
+        height: 100vh;
+        max-width: 925px;
+        max-height: 882px;
+        background: url(../images/illustration-editor-desktop.svg) no-repeat;
+        background-size: cover;
+    }
+}
