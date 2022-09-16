@@ -10,7 +10,7 @@
         z-index: -1;
         width: 100%;
         height: 550px;
-        border-bottom-left-radius: 100px;
+        border-bottom-left-radius: $border-radius-section;
         background: url(../images/bg-pattern-intro-desktop.svg) no-repeat -460px -1360px
                     ,linear-gradient(140deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 55%);
         background-size: 3175px;

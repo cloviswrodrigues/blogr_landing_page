@@ -81,3 +81,45 @@
         background-size: cover;
     }
 }
+
+.section-third {
+    margin-top: 35rem; 
+    background: url(../images/bg-pattern-circles.svg) no-repeat -234px -512px
+                ,linear-gradient(144deg, rgba(44,45,63,1) 0%, rgba(63,65,100,1) 100%);
+    position: relative;
+    height: 400px;
+    border-top-right-radius: $border-radius-section;
+    border-bottom-left-radius: $border-radius-section;
+    
+    .container {           
+        display: flex;
+    }
+    
+    &__img-phone{
+        position: relative;
+        top: -70px;
+        left: -38px;
+        width: 530px;
+        height: 579px;
+        background: url(../images/illustration-phones.svg) no-repeat;
+    }
+
+    &__info {
+        color: $color-white;
+        width: 42%;
+        margin-left: 5rem;
+        padding-top: 10rem;
+
+        h2 {
+            font-family: Overpass, sans-serif;
+            font-size: 3.5rem;
+        }
+
+        p {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            color: $color-grayish-blue;
+            line-height: 2.5rem;
+        }
+    }
+}

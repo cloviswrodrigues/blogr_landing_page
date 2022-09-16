@@ -148,4 +148,40 @@ a {
   background-size: cover;
 }
 
+.section-third {
+  margin-top: 35rem;
+  background: url(../images/bg-pattern-circles.svg) no-repeat -234px -512px, linear-gradient(144deg, rgb(44, 45, 63) 0%, rgb(63, 65, 100) 100%);
+  position: relative;
+  height: 400px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.section-third .container {
+  display: flex;
+}
+.section-third__img-phone {
+  position: relative;
+  top: -70px;
+  left: -38px;
+  width: 530px;
+  height: 579px;
+  background: url(../images/illustration-phones.svg) no-repeat;
+}
+.section-third__info {
+  color: hsl(0deg, 0%, 100%);
+  width: 42%;
+  margin-left: 5rem;
+  padding-top: 10rem;
+}
+.section-third__info h2 {
+  font-family: Overpass, sans-serif;
+  font-size: 3.5rem;
+}
+.section-third__info p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: hsl(240deg, 2%, 79%);
+  line-height: 2.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
