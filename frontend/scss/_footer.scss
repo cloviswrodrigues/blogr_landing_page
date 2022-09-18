@@ -1,0 +1,44 @@
+.footer {
+    margin-top: 40rem;
+    background-color: $color-very-dark-black-blue;
+    border-top-right-radius: $border-radius-section;
+    padding: 8rem 0;
+    color: $color-white;
+    font-size: 1.4rem;
+    position: relative;
+
+    .container {
+        display: flex;
+        gap: 20rem;
+    }
+
+    &__menu {
+        margin: 1rem;
+
+        h4 {
+            margin-bottom: 3rem;
+        }
+
+        nav {
+            color: $color-grayish-blue;
+
+            li:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        font-size: 1rem;
+
+        a {
+            color: $color-grayish-blue;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
