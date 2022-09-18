@@ -30,6 +30,10 @@ html {
     font-size: 10px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 144rem;
     width: 80%;
