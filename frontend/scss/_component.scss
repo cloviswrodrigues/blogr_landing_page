@@ -123,3 +123,40 @@
         }
     }
 }
+
+.section-fourth {
+    margin-top: 30rem;
+    position: relative;
+
+    &__info {
+        margin-left: auto;
+        max-width: 50%;
+
+        h3 {            
+            font-family: Overpass, sans-serif;
+            font-size: 2.5rem;
+            color: $color-very-dark-black-blue;
+        }
+
+        p {
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+        }
+        
+        &:nth-child(2) {
+            margin-top: 6rem;
+        }
+    }
+
+    &__img-laptop {
+        position: absolute;
+        top: -190px;
+        left: -420px;
+        width: 100%;
+        height: 100vh;
+        max-width: 974px;
+        max-height: 786px;
+        background: url(../images/illustration-laptop-desktop.svg);
+    }
+}
