@@ -59,15 +59,40 @@ a {
   align-items: center;
   gap: 4rem;
 }
+.header__menu-item {
+  position: relative;
+}
 .header__dropdown::after {
   content: url(../images/icon-arrow-light.svg);
   margin-left: 0.5rem;
+  display: inline-block;
+  transition: all 1s;
 }
 .header__dropdown:hover {
   text-decoration: underline;
 }
+.header .dropdown-active::after {
+  transform: rotateX(180deg);
+}
 .header__submenu {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  left: -20px;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 3rem 2rem;
+  color: hsl(240deg, 10%, 16%);
+  border-radius: 5px;
+  font-weight: 400;
+  width: 140px;
+  box-shadow: 1px 10px 30px 1px rgba(0, 0, 0, 0.19);
+  transition: all 1s;
+}
+.header__submenu li:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.header__submenu li:hover {
+  font-weight: 600;
 }
 .header__logon {
   display: flex;
@@ -84,6 +109,10 @@ a {
 .header__logon--signup:hover {
   background-color: #ff7081;
   color: hsl(0deg, 0%, 100%);
+}
+
+.opacity {
+  opacity: 1 !important;
 }
 
 .section-first {
