@@ -63,6 +63,9 @@ a {
   content: url(../images/icon-arrow-light.svg);
   margin-left: 0.5rem;
 }
+.header__dropdown:hover {
+  text-decoration: underline;
+}
 .header__submenu {
   display: none;
 }
@@ -77,6 +80,10 @@ a {
   border-radius: 4rem;
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(353deg, 100%, 62%);
+}
+.header__logon--signup:hover {
+  background-color: #ff7081;
+  color: hsl(0deg, 0%, 100%);
 }
 
 .section-first {
@@ -110,6 +117,16 @@ a {
   margin-left: 1rem;
   color: hsl(0deg, 0%, 100%);
   background-color: transparent;
+}
+.section-first__buttons a:last-child:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: #ff7081;
+  border: 1px solid hsl(0deg, 0%, 100%);
+}
+.section-first__buttons a:hover {
+  background-color: #ff7081;
+  color: hsl(0deg, 0%, 100%);
+  border: 1px solid #ff7081;
 }
 
 .section-second {
@@ -244,6 +261,9 @@ a {
 }
 .footer__menu nav li:not(:last-child) {
   margin-bottom: 1.5rem;
+}
+.footer__menu nav li:hover {
+  text-decoration: underline;
 }
 .footer .attribution {
   position: absolute;

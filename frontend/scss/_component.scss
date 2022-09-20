@@ -31,6 +31,18 @@
                 margin-left: 1rem;
                 color: $color-white;
                 background-color: transparent;
+
+                &:hover {
+                    background-color: $color-white;
+                    color: lighten($color-light-red,10);
+                    border: 1px solid $color-white;
+                }
+            }
+
+            &:hover {
+                background-color: lighten($color-light-red,10);
+                color: $color-white;
+                border: 1px solid lighten($color-light-red,10);
             }
         }
     }

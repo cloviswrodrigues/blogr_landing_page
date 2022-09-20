@@ -36,10 +36,13 @@
 
     &__dropdown {
 
-
         &::after {
             content: url(../images/icon-arrow-light.svg);
             margin-left: .5rem;
+        }
+
+        &:hover {
+            text-decoration: underline;
         }
     }
 
@@ -58,6 +61,11 @@
             border-radius: 4rem;
             background-color: $color-white;
             color: $color-light-red;
+
+            &:hover {
+                background-color: lighten($color-light-red,10);
+                color: $color-white
+            }
         }
     }
 }
