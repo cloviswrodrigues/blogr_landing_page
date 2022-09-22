@@ -18,6 +18,7 @@ $color-very-dark-desaturated-blue: hsl(237, 23%, 32%);
 
 $border-radius-section: 100px;
 
+$break-mobile: 800px;
 
 * {
     margin: 0;
@@ -38,6 +39,10 @@ body {
     max-width: 144rem;
     width: 80%;
     margin: 0 auto;
+
+    @media screen and (max-width: $break-mobile) {
+        width: 90%;
+    }
 }
 
 li {

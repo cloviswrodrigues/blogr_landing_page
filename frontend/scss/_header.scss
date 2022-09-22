@@ -28,6 +28,14 @@
         flex-basis: 100%;
     }
 
+    &__icon {
+        display: none;
+
+        svg {
+            display: none;
+        }
+    }
+
     &__menu {
         display: flex;
         align-items: center;
@@ -97,6 +105,39 @@
                 background-color: lighten($color-light-red,10);
                 color: $color-white
             }
+        }
+    }
+
+    .active {
+        display: block;
+    }
+
+    .disabled {
+        display: none;
+    }
+
+    @media screen and (max-width: $break-mobile) {
+        .wrapper {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__nav {
+            flex-basis: auto;
+        }
+
+        &__icon {
+            display: block;
+            width: 32px;
+            min-height: 18px;
+        }       
+
+        &__menu {
+            display: none;
+        }
+
+        &__logon {
+            display: none;
         }
     }
 }

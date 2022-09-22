@@ -18,6 +18,11 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
 
 li {
   list-style: none;
@@ -53,6 +58,12 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-basis: 100%;
+}
+.header__icon {
+  display: none;
+}
+.header__icon svg {
+  display: none;
 }
 .header__menu {
   display: flex;
@@ -109,6 +120,32 @@ a {
 .header__logon--signup:hover {
   background-color: #ff858d;
   color: hsl(0deg, 0%, 100%);
+}
+.header .active {
+  display: block;
+}
+.header .disabled {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .header .wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__nav {
+    flex-basis: auto;
+  }
+  .header__icon {
+    display: block;
+    width: 32px;
+    min-height: 18px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__logon {
+    display: none;
+  }
 }
 
 .opacity {
