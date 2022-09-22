@@ -97,7 +97,7 @@
 .section-third {
     margin-top: 35rem; 
     background: url(../images/bg-pattern-circles.svg) no-repeat -234px -512px
-                ,linear-gradient(144deg, rgba(44,45,63,1) 0%, rgba(63,65,100,1) 100%);
+                ,linear-gradient(144deg, $color-very-dark-gray-blue 0%, $color-very-dark-desaturated-blue 100%);
     position: relative;
     height: 400px;
     border-top-right-radius: $border-radius-section;

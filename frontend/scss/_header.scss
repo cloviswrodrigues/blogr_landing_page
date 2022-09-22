@@ -12,7 +12,7 @@
         height: 550px;
         border-bottom-left-radius: $border-radius-section;
         background: url(../images/bg-pattern-intro-desktop.svg) no-repeat -460px -1360px
-                    ,linear-gradient(140deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 55%);
+                    ,linear-gradient(140deg, $color-very-light-red-gradient 0%, $color-light-red-gradient 55%);
         background-size: 3175px;
     }
 
