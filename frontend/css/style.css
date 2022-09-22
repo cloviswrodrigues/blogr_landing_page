@@ -226,12 +226,12 @@ a {
 .section-second__illustration {
   position: absolute;
   top: -80px;
-  right: -400px;
-  width: 100%;
+  right: 0px;
+  width: 50%;
   height: 100vh;
   max-width: 925px;
   max-height: 882px;
-  background: url(../images/illustration-editor-desktop.svg) no-repeat;
+  background: url(../images/illustration-editor-desktop.svg) no-repeat 50px;
   background-size: cover;
 }
 
