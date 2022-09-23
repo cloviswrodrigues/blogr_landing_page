@@ -204,6 +204,20 @@ a {
   color: hsl(0deg, 0%, 100%);
   border: 1px solid #ff858d;
 }
+@media screen and (max-width: 800px) {
+  .section-first {
+    margin-top: 8rem;
+  }
+  .section-first h1 {
+    font-size: 3.5rem;
+  }
+  .section-first p {
+    margin-top: 2rem;
+  }
+  .section-first__buttons {
+    margin-top: 8rem;
+  }
+}
 
 .section-second {
   margin-top: 35rem;
