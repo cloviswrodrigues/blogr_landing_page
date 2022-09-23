@@ -258,6 +258,39 @@ a {
   background: url(../images/illustration-editor-desktop.svg) no-repeat 50px;
   background-size: cover;
 }
+@media screen and (max-width: 800px) {
+  .section-second {
+    margin-top: 22rem;
+  }
+  .section-second .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-second h2 {
+    order: 1;
+    font-size: 2.5rem;
+  }
+  .section-second__illustration {
+    margin-top: 5rem;
+    order: 2;
+    position: inherit;
+    width: 100%;
+    height: 100vh;
+    max-height: 331px;
+    background: url(../images/illustration-editor-mobile.svg) no-repeat center;
+    background-size: cover;
+  }
+  .section-second__info {
+    padding: 0 2rem;
+    order: 3;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .section-second__info:nth-child(3) {
+    margin-top: 4rem;
+  }
+}
 
 .section-third {
   margin-top: 35rem;
