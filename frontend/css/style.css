@@ -307,8 +307,10 @@ a {
   position: relative;
   top: -70px;
   left: -38px;
-  width: 530px;
-  height: 579px;
+  width: 100%;
+  height: 100vh;
+  max-width: 530px;
+  max-height: 579px;
   background: url(../images/illustration-phones.svg) no-repeat;
 }
 .section-third__info {
@@ -326,6 +328,30 @@ a {
   font-size: 1.5rem;
   color: hsl(240deg, 2%, 79%);
   line-height: 2.5rem;
+}
+@media screen and (max-width: 800px) {
+  .section-third {
+    background: url(../images/bg-pattern-circles.svg) no-repeat -110px -240px, linear-gradient(144deg, hsl(237deg, 17%, 21%) 0%, hsl(237deg, 23%, 32%) 100%);
+    background-size: 160%;
+    height: 75vh;
+  }
+  .section-third .container {
+    flex-direction: column;
+  }
+  .section-third__img-phone {
+    margin: 0 auto;
+    position: absolute;
+    top: -50vw;
+    left: 0px;
+    right: 0px;
+    background-size: 100%;
+  }
+  .section-third__info {
+    width: 85%;
+    max-width: 40rem;
+    margin: 10rem auto;
+    text-align: center;
+  }
 }
 
 .section-fourth {

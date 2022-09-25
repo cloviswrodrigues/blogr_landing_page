@@ -164,8 +164,10 @@
         position: relative;
         top: -70px;
         left: -38px;
-        width: 530px;
-        height: 579px;
+        width: 100%;
+        height: 100vh;
+        max-width: 530px;
+        max-height: 579px;
         background: url(../images/illustration-phones.svg) no-repeat;
     }
 
@@ -185,6 +187,33 @@
             font-size: 1.5rem;
             color: $color-grayish-blue;
             line-height: 2.5rem;
+        }
+    }
+
+    @media screen and (max-width: $break-mobile) {
+        background: url(../images/bg-pattern-circles.svg) no-repeat -110px -240px
+                ,linear-gradient(144deg, $color-very-dark-gray-blue 0%, $color-very-dark-desaturated-blue 100%);
+        background-size: 160%;
+        height: 75vh;
+
+        .container {
+            flex-direction: column;
+        }
+
+        &__img-phone{
+            margin: 0 auto;
+            position: absolute;
+            top: -50vw;
+            left: 0px;
+            right: 0px;         
+            background-size: 100%;
+        }
+
+        &__info {
+            width: 85%;
+            max-width: 40rem;
+            margin: 10rem auto;
+            text-align: center;
         }
     }
 }
