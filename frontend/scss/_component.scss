@@ -235,6 +235,7 @@
         p {
             margin-top: 2rem;
             font-size: 1.4rem;
+            color: $color-very-dark-grayish-blue;
             line-height: 2.5rem;
         }
         
@@ -248,9 +249,31 @@
         top: -190px;
         left: -420px;
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         max-width: 974px;
         max-height: 786px;
         background: url(../images/illustration-laptop-desktop.svg);
+    }
+
+    @media screen and (max-width: $break-mobile) {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &__info {
+            max-width: 100%;
+            order: 3;
+        }
+
+        &__img-laptop {
+            order: -1;
+            position: relative;
+            top: 0;
+            left: 0;
+            background: url(../images/illustration-laptop-mobile.svg) no-repeat center;
+            background-size: 150%;
+            margin-bottom: 2rem;
+        }
     }
 }

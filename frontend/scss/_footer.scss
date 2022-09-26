@@ -47,6 +47,7 @@
     }
 
     @media screen and (max-width: $break-mobile) {
+        margin-top: 10rem;
 
         .container {
             flex-direction: column;
