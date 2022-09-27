@@ -22,13 +22,17 @@
     }
 
     &__nav {
+        width: 100%;
+    }
+
+    &__bg-menu {
         display: flex;
         justify-content: space-between;
         align-items: center;        
         flex-basis: 100%;
     }
 
-    &__icon {
+    &__button-menu {
         display: none;
 
         svg {
@@ -108,14 +112,6 @@
         }
     }
 
-    .active {
-        display: block;
-    }
-
-    .disabled {
-        display: none;
-    }
-
     @media screen and (max-width: $break-mobile) {
 
         &__bg--pattern {
@@ -136,25 +132,85 @@
         }
 
         &__nav {
-            flex-basis: auto;
+            width: auto;
         }
 
-        &__icon {
+        &__button-menu {
             display: block;
             width: 32px;
             min-height: 18px;
-        }       
+        }      
+        
+        &__bg-menu {
+            position: absolute;
+            top: 16vh;
+            left: 5%;
+            right: 5%;
+            width: 90%;
+            background-color: $color-white;
+            height: 80vh;
+            border-radius: 1rem;
+            z-index: 1;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 4rem 2rem;
+        }
 
         &__menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            color: $color-very-dark-desaturated-blue;
+            text-align: center;
+            width: 100%;
+
+            &-item {
+                width: 100%;
+
+                a {
+
+                }
+            }
+        }
+
+        &__dropdown {
+
+            &::after {
+                content: url(../images/icon-arrow-dark.svg);
+                margin-left: .5rem;            
+                display: inline-block;
+                transition: all 1s;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }    
+
+        &__submenu {
             display: none;
+            opacity: 0;
+            margin-top: 2rem;
+            position: static;
+            background-color: lighten($color-grayish-blue,15%);
+            padding: 3rem 2rem;
+            width: 100%;
+            box-shadow: none;
+            font-size: 1.6rem;
+    
+            li:not(:last-child) {
+                margin-bottom: 2.5rem;
+            }
+    
+            li:hover {
+                font-weight: 600;
+            }
         }
 
         &__logon {
             display: none;
         }
     }
-}
-
-.opacity {
-    opacity: 1 !important;
 }

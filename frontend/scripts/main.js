@@ -8,7 +8,7 @@ function showSubMenu(e) {
     let dropDown = e.target;
     let subMenu = e.target.nextElementSibling;
     dropDown.classList.add('dropdown-active');
-    subMenu.classList.add('opacity', 'js-submenu-activate');
+    subMenu.classList.add('activate', 'js-submenu-activate');
 }
 
 function hiddenAllSubMenu(){
@@ -16,7 +16,7 @@ function hiddenAllSubMenu(){
         let dropDown = elem;
         let subMenu = elem.nextElementSibling;
         dropDown.classList.remove('dropdown-active')
-        subMenu.classList.remove('opacity','js-submenu-activate');
+        subMenu.classList.remove('activate','js-submenu-activate');
     })
 }
 

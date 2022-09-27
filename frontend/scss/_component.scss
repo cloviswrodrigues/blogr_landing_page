@@ -249,7 +249,7 @@
         top: -190px;
         left: -420px;
         width: 100%;
-        height: 50vh;
+        height: 100vh;
         max-width: 974px;
         max-height: 786px;
         background: url(../images/illustration-laptop-desktop.svg);
@@ -273,7 +273,8 @@
             left: 0;
             background: url(../images/illustration-laptop-mobile.svg) no-repeat center;
             background-size: 150%;
-            margin-bottom: 2rem;
+            margin-bottom: 2rem;            
+            height: 50vh;
         }
     }
 }

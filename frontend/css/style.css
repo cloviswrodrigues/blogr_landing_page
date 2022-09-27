@@ -33,6 +33,15 @@ a {
   cursor: pointer;
 }
 
+.activate {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.disabled {
+  display: none;
+}
+
 .header {
   padding-top: 5rem;
   font-size: 1.4rem;
@@ -54,15 +63,18 @@ a {
   gap: 5rem;
 }
 .header__nav {
+  width: 100%;
+}
+.header__bg-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-basis: 100%;
 }
-.header__icon {
+.header__button-menu {
   display: none;
 }
-.header__icon svg {
+.header__button-menu svg {
   display: none;
 }
 .header__menu {
@@ -121,12 +133,6 @@ a {
   background-color: #ff858d;
   color: hsl(0deg, 0%, 100%);
 }
-.header .active {
-  display: block;
-}
-.header .disabled {
-  display: none;
-}
 @media screen and (max-width: 800px) {
   .header__bg--pattern {
     position: absolute;
@@ -143,23 +149,69 @@ a {
     align-items: center;
   }
   .header__nav {
-    flex-basis: auto;
+    width: auto;
   }
-  .header__icon {
+  .header__button-menu {
     display: block;
     width: 32px;
     min-height: 18px;
   }
+  .header__bg-menu {
+    position: absolute;
+    top: 16vh;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    background-color: hsl(0deg, 0%, 100%);
+    height: 80vh;
+    border-radius: 1rem;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem 2rem;
+  }
   .header__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: hsl(237deg, 23%, 32%);
+    text-align: center;
+    width: 100%;
+  }
+  .header__menu-item {
+    width: 100%;
+  }
+  .header__dropdown::after {
+    content: url(../images/icon-arrow-dark.svg);
+    margin-left: 0.5rem;
+    display: inline-block;
+    transition: all 1s;
+  }
+  .header__dropdown:hover {
+    text-decoration: none;
+  }
+  .header__submenu {
     display: none;
+    opacity: 0;
+    margin-top: 2rem;
+    position: static;
+    background-color: #efeff0;
+    padding: 3rem 2rem;
+    width: 100%;
+    box-shadow: none;
+    font-size: 1.6rem;
+  }
+  .header__submenu li:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+  .header__submenu li:hover {
+    font-weight: 600;
   }
   .header__logon {
     display: none;
   }
-}
-
-.opacity {
-  opacity: 1 !important;
 }
 
 .section-first {
@@ -381,7 +433,7 @@ a {
   top: -190px;
   left: -420px;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   max-width: 974px;
   max-height: 786px;
   background: url(../images/illustration-laptop-desktop.svg);
@@ -405,6 +457,7 @@ a {
     background: url(../images/illustration-laptop-mobile.svg) no-repeat center;
     background-size: 150%;
     margin-bottom: 2rem;
+    height: 50vh;
   }
 }
 

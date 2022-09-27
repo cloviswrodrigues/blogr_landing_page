@@ -53,3 +53,12 @@ a {
     all: unset;
     cursor: pointer;
 }
+
+.activate {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.disabled {
+    display: none;
+}
