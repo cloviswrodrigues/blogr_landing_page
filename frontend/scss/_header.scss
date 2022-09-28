@@ -142,18 +142,20 @@
         }      
         
         &__bg-menu {
+            opacity: 0;
             position: absolute;
             top: 16vh;
             left: 5%;
             right: 5%;
             width: 90%;
             background-color: $color-white;
-            height: 80vh;
+            height: auto;
             border-radius: 1rem;
             z-index: 1;
             flex-direction: column;
             justify-content: flex-start;
-            padding: 4rem 2rem;
+            padding: 4rem 2rem 3rem 2rem;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.19);
         }
 
         &__menu {
@@ -161,17 +163,16 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 3rem;
             font-size: 1.8rem;
             color: $color-very-dark-desaturated-blue;
             text-align: center;
             width: 100%;
+            padding-bottom: 2.5rem;
+            border-bottom: 2px solid lighten($color-grayish-blue,15%);
 
             &-item {
                 width: 100%;
-
-                a {
-
-                }
             }
         }
 
@@ -189,6 +190,11 @@
             }
         }    
 
+        .dropdown-active {
+            opacity: .8;
+        }
+    
+
         &__submenu {
             display: none;
             opacity: 0;
@@ -199,6 +205,8 @@
             width: 100%;
             box-shadow: none;
             font-size: 1.6rem;
+            font-weight: 500;
+            color: lighten($color-very-dark-black-blue,30%);
     
             li:not(:last-child) {
                 margin-bottom: 2.5rem;
@@ -210,7 +218,22 @@
         }
 
         &__logon {
-            display: none;
+            display: flex;
+            flex-direction: column;
+
+            a:first-child {
+                margin-top: 3rem;
+                font-size: 1.6rem;
+                color: $color-very-dark-desaturated-blue;
+            }
+
+            &--signup {
+                height: 18px;
+                padding: 1.5rem 4rem;
+                border-radius: 4rem;
+                background-color: $color-light-red;
+                color: $color-white;
+            }
         }
     }
 }

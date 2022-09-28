@@ -1,7 +1,5 @@
 const menuItem = document.querySelectorAll('.js-dropdown');
 
-console.log('menu:', menuItem);
-
 function showSubMenu(e) {
     hiddenAllSubMenu();
 
@@ -26,8 +24,22 @@ menuItem.forEach((e) => {
 
 window.addEventListener('mouseup', (e) => {
     var submenuActivate = document.querySelector('.js-submenu-activate');
-    console.log('e ====>',e.target)
     if (e.target != submenuActivate) {
         hiddenAllSubMenu();
     }
 })
+
+
+const btnMenuMobile = document.querySelector('.js-btn-mobile');
+const btnHamburguer = document.querySelector('.js-btn-hamburguer');
+const btnClose = document.querySelector('.js-btn-close');
+const menuMobile = document.querySelector('.header__bg-menu');
+
+function openMenuMobile() {
+    btnHamburguer.classList.toggle('activate')
+    btnClose.classList.toggle('activate')
+    menuMobile.classList.toggle('activate')
+}
+
+btnMenuMobile.addEventListener('click', openMenuMobile)
+
