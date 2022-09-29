@@ -232,7 +232,8 @@ a {
     height: 18px;
     padding: 1.5rem 4rem;
     border-radius: 4rem;
-    background-color: hsl(356deg, 100%, 66%);
+    background: rgb(255, 143, 112);
+    background: linear-gradient(144deg, hsl(13deg, 100%, 72%) 0%, hsl(353deg, 100%, 62%) 100%);
     color: hsl(0deg, 0%, 100%);
   }
 }

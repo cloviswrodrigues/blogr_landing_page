@@ -231,7 +231,8 @@
                 height: 18px;
                 padding: 1.5rem 4rem;
                 border-radius: 4rem;
-                background-color: $color-light-red;
+                background: rgb(255,143,112);
+                background: linear-gradient(144deg, $color-very-light-red-gradient 0%, $color-light-red-gradient 100%);
                 color: $color-white;
             }
         }
